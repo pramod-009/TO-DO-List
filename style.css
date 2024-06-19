@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.task-entry {
+    margin-bottom: 1em;
+}
+
+.task-entry input[type="text"] {
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 0.5em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-entry button[type="button"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.task-list {
+    margin-top: 2em;
+}
+
+.task-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-list li {
+    background-color: #fff;
+    padding: 1em;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-list li:last-child {
+    border-bottom: none;
+}
+
+.task-list li.task-name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.task-list li.task-due-date {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.task-list li.task-category {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.task-list li.task-priority {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.task-list li button[type="button"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 0.2em 0.5em;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.task-list li button[type="button"]:hover{
+    background-color: #3e8e41;
+}
